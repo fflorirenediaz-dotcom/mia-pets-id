@@ -3,88 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Chanel | Mía Pets ID</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial, sans-serif;
-background:#f8f6f5;
-color:#333;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#FAF8F7;
+color:#1F1F1F;
+padding:20px;
 }
 
 .container{
 max-width:500px;
 margin:auto;
-padding:20px;
 }
 
 .card{
 background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+border-radius:28px;
+padding:35px 25px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 }
 
-img{
-width:100%;
-display:block;
+.brand{
+text-align:center;
+font-size:13px;
+letter-spacing:2px;
+font-weight:600;
+color:#7A7A7A;
+margin-bottom:25px;
 }
 
-.content{
-padding:25px;
+.photo-container{
+display:flex;
+justify-content:center;
+margin-bottom:25px;
+}
+
+.photo{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #E7C9C5;
+box-shadow:0 10px 25px rgba(0,0,0,.10);
 }
 
 h1{
-margin:0;
-font-size:32px;
 text-align:center;
+font-size:34px;
+font-weight:700;
+margin-bottom:10px;
 }
 
 .subtitle{
 text-align:center;
-color:#777;
-margin-bottom:20px;
+font-size:15px;
+color:#7A7A7A;
+margin-bottom:8px;
 }
 
 .location{
 text-align:center;
-margin-bottom:25px;
+font-size:14px;
+color:#7A7A7A;
+margin-bottom:30px;
 }
 
 .button{
 display:block;
+width:100%;
 text-decoration:none;
 text-align:center;
-padding:15px;
-border-radius:12px;
+padding:16px;
+border-radius:16px;
+font-weight:600;
 margin-bottom:12px;
-font-weight:bold;
+transition:.3s;
 }
 
 .call{
-background:#e9d5d0;
-color:#333;
+background:#E7C9C5;
+color:#1F1F1F;
 }
 
 .whatsapp{
-background:#25D366;
+background:#1F1F1F;
 color:white;
 }
 
 .info{
-background:#fff3f3;
-padding:15px;
-border-radius:12px;
-margin-top:20px;
+margin-top:25px;
+background:white;
+border-left:5px solid #E7C9C5;
+padding:18px;
+border-radius:16px;
+box-shadow:0 5px 15px rgba(0,0,0,.04);
+}
+
+.info-title{
+font-size:16px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.info-text{
+color:#555;
+line-height:1.6;
 }
 
 .footer{
 text-align:center;
-margin-top:20px;
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid #EFEFEF;
+}
+
+.footer-title{
+font-weight:700;
+margin-bottom:8px;
+}
+
+.footer-text{
 font-size:14px;
-color:#777;
+color:#7A7A7A;
+line-height:1.6;
 }
 
 </style>
@@ -96,11 +149,15 @@ color:#777;
 
 <div class="card">
 
-<img src="Chanel.jpg" alt="Chanel">
+<div class="brand">
+MÍA PETS ID
+</div>
 
-<div class="content">
+<div class="photo-container">
+<img src="Chanel.jpg" alt="Chanel" class="photo">
+</div>
 
-<h1>🐶 Chanel</h1>
+<h1>Chanel</h1>
 
 <p class="subtitle">
 Shih Tzu • Hembra • 2 años
@@ -111,38 +168,41 @@ Shih Tzu • Hembra • 2 años
 </p>
 
 <a class="button call" href="tel:5581354381">
-📞 Llamar
+📞 Llamar a mi familia
 </a>
 
-<a class="button whatsapp"
-href="https://wa.me/525581354381">
+<a class="button whatsapp" href="https://wa.me/525581354381">
 💬 WhatsApp
 </a>
 
 <div class="info">
 
-<h3>⚠️ Información importante</h3>
+<div class="info-title">
+⚠️ Información importante
+</div>
 
-<p>
-Condición médica:
+<div class="info-text">
+Condición médica:<br>
 <strong>Dermatitis</strong>
-</p>
+</div>
 
 </div>
 
 <div class="footer">
 
-❤️ Si me encontraste,
-por favor ayúdame a volver a casa.
+<div class="footer-title">
+Mía Pets ID
+</div>
 
-<br><br>
-
-<strong>Mía Pets ID</strong>
-
+<div class="footer-text">
+Más que una placa,<br>
+tranquilidad para volver a casa.
 </div>
 
 </div>
+
 </div>
+
 </div>
 
 </body>
